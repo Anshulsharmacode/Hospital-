@@ -140,130 +140,7 @@ export function LandinngPageOne() {
           </div>
         </div>
       </div>
-      <section className="mx-auto max-w-7xl px-2 py-16 md:px-0 bg-gradient-to-br from-blue-100 to-purple-100">
-        <div className="relative">
-          <div className="absolute inset-0 bg-[url('/faq-background.jpg')] bg-cover bg-center opacity-10"></div>
-          <div className="relative z-10">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-4xl font-bold leading-tight text-blue-800 sm:text-5xl lg:text-6xl">
-                Frequently Asked Questions
-              </h2>
-              <p className="mt-4 max-w-xl text-lg leading-relaxed text-gray-600 lg:mx-auto">
-                Find answers to common questions about our hospital services and
-                policies.
-              </p>
-            </div>
-            <div className="mx-auto mt-12 max-w-3xl space-y-6 md:mt-16">
-              {[
-                {
-                  question: "What are the visiting hours?",
-                  answer:
-                    "Visiting hours are from 9 AM to 8 PM daily. Please check with the specific department for any exceptions.",
-                },
-                {
-                  question: "How can I make an appointment?",
-                  answer:
-                    "You can make an appointment by calling our scheduling department at (123) 456-7890 or using our online appointment system.",
-                },
-                {
-                  question: "What should I bring for my first visit?",
-                  answer:
-                    "Please bring a valid ID, insurance information, and any relevant medical records. If you have a referral from another doctor, bring that as well.",
-                },
-                {
-                  question: "Do you accept insurance?",
-                  answer:
-                    "Yes, we accept most major insurance plans. Please contact your insurance provider to confirm coverage and bring your insurance card to your appointment.",
-                },
-                {
-                  question: "What are your emergency services?",
-                  answer:
-                    "Our emergency department is open 24/7 for urgent medical issues. If you are experiencing a medical emergency, please call 911 or visit the emergency room immediately.",
-                },
-                {
-                  question: "Can I pay my bill online?",
-                  answer:
-                    "Yes, you can pay your bill online through our secure payment portal on our website. You will need your account number and payment details.",
-                },
-                {
-                  question:
-                    "What should I do if I need to cancel an appointment?",
-                  answer:
-                    "To cancel an appointment, please call our office at least 24 hours in advance to reschedule. Failure to do so may result in a cancellation fee.",
-                },
-                {
-                  question: "Is there parking available?",
-                  answer:
-                    "Yes, we have ample parking available on-site. Valet parking is also offered at the main entrance.",
-                },
-                {
-                  question: "How can I contact a patient?",
-                  answer:
-                    "You can contact a patient by calling the hospital&apos;s main line and asking to be transferred to their room. For privacy reasons, patient information cannot be provided without prior authorization.",
-                },
-                {
-                  question:
-                    "What are the hospital&apos;s visitor policies during flu season?",
-                  answer:
-                    "During flu season, visitor policies may be restricted to protect patients. Please check our website or call the hospital for the latest visitor guidelines.",
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="overflow-hidden rounded-lg border border-blue-200 bg-white shadow-md transition-all duration-300 hover:shadow-lg"
-                >
-                  <button
-                    type="button"
-                    className="flex w-full items-center justify-between px-6 py-4 text-left"
-                    onClick={() => {
-                      const answer = document.getElementById(`answer-${index}`);
-                      const icon = document.getElementById(`icon-${index}`);
-                      if (answer && icon) {
-                        answer.classList.toggle("hidden");
-                        icon.classList.toggle("rotate-180");
-                      }
-                    }}
-                  >
-                    <span className="text-lg font-semibold text-blue-800">
-                      {item.question}
-                    </span>
-                    <svg
-                      id={`icon-${index}`}
-                      className="h-6 w-6 text-blue-500 transition-transform duration-300"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </button>
-                  <div
-                    id={`answer-${index}`}
-                    className="hidden px-6 pb-4 text-gray-600"
-                  >
-                    <p className="animate-fadeIn">{item.answer}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="mt-10 text-center text-lg text-gray-600">
-              Can&apos;t find what you&apos;re looking for?{" "}
-              <a
-                href="#"
-                className="font-semibold text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                Contact our support
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
+
       <section className="bg-gradient-to-r from-blue-100 to-purple-100 py-16">
         <div className="container mx-auto px-4">
           <h2 className="mb-8 text-center text-3xl font-bold text-blue-800">
@@ -650,6 +527,130 @@ export function LandinngPageOne() {
         </div>
       </div>
       {/* FAQs */}
+      <section className="mx-auto max-w-7xl px-2 py-16 md:px-0 bg-gradient-to-br from-blue-100 to-purple-100">
+        <div className="relative">
+          <div className="absolute inset-0 bg-[url('/faq-background.jpg')] bg-cover bg-center opacity-10"></div>
+          <div className="relative z-10">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-4xl font-bold leading-tight text-blue-800 sm:text-5xl lg:text-6xl">
+                Frequently Asked Questions
+              </h2>
+              <p className="mt-4 max-w-xl text-lg leading-relaxed text-gray-600 lg:mx-auto">
+                Find answers to common questions about our hospital services and
+                policies.
+              </p>
+            </div>
+            <div className="mx-auto mt-12 max-w-3xl space-y-6 md:mt-16">
+              {[
+                {
+                  question: "What are the visiting hours?",
+                  answer:
+                    "Visiting hours are from 9 AM to 8 PM daily. Please check with the specific department for any exceptions.",
+                },
+                {
+                  question: "How can I make an appointment?",
+                  answer:
+                    "You can make an appointment by calling our scheduling department at (123) 456-7890 or using our online appointment system.",
+                },
+                {
+                  question: "What should I bring for my first visit?",
+                  answer:
+                    "Please bring a valid ID, insurance information, and any relevant medical records. If you have a referral from another doctor, bring that as well.",
+                },
+                {
+                  question: "Do you accept insurance?",
+                  answer:
+                    "Yes, we accept most major insurance plans. Please contact your insurance provider to confirm coverage and bring your insurance card to your appointment.",
+                },
+                {
+                  question: "What are your emergency services?",
+                  answer:
+                    "Our emergency department is open 24/7 for urgent medical issues. If you are experiencing a medical emergency, please call 911 or visit the emergency room immediately.",
+                },
+                {
+                  question: "Can I pay my bill online?",
+                  answer:
+                    "Yes, you can pay your bill online through our secure payment portal on our website. You will need your account number and payment details.",
+                },
+                {
+                  question:
+                    "What should I do if I need to cancel an appointment?",
+                  answer:
+                    "To cancel an appointment, please call our office at least 24 hours in advance to reschedule. Failure to do so may result in a cancellation fee.",
+                },
+                {
+                  question: "Is there parking available?",
+                  answer:
+                    "Yes, we have ample parking available on-site. Valet parking is also offered at the main entrance.",
+                },
+                {
+                  question: "How can I contact a patient?",
+                  answer:
+                    "You can contact a patient by calling the hospital&apos;s main line and asking to be transferred to their room. For privacy reasons, patient information cannot be provided without prior authorization.",
+                },
+                {
+                  question:
+                    "What are the hospital&apos;s visitor policies during flu season?",
+                  answer:
+                    "During flu season, visitor policies may be restricted to protect patients. Please check our website or call the hospital for the latest visitor guidelines.",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden rounded-lg border border-blue-200 bg-white shadow-md transition-all duration-300 hover:shadow-lg"
+                >
+                  <button
+                    type="button"
+                    className="flex w-full items-center justify-between px-6 py-4 text-left"
+                    onClick={() => {
+                      const answer = document.getElementById(`answer-${index}`);
+                      const icon = document.getElementById(`icon-${index}`);
+                      if (answer && icon) {
+                        answer.classList.toggle("hidden");
+                        icon.classList.toggle("rotate-180");
+                      }
+                    }}
+                  >
+                    <span className="text-lg font-semibold text-blue-800">
+                      {item.question}
+                    </span>
+                    <svg
+                      id={`icon-${index}`}
+                      className="h-6 w-6 text-blue-500 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    id={`answer-${index}`}
+                    className="hidden px-6 pb-4 text-gray-600"
+                  >
+                    <p className="animate-fadeIn">{item.answer}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 text-center text-lg text-gray-600">
+              Can&apos;t find what you&apos;re looking for?{" "}
+              <a
+                href="#"
+                className="font-semibold text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Contact our support
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* footer */}
       <div className="bg-gradient-to-r from-blue-100 to-purple-100">
