@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const menuItems = [
   { name: "Home", href: "#" },
@@ -198,11 +199,11 @@ export function LandinngPageOne() {
                 {
                   question: "How can I contact a patient?",
                   answer:
-                    "You can contact a patient by calling the hospital's main line and asking to be transferred to their room. For privacy reasons, patient information cannot be provided without prior authorization.",
+                    "You can contact a patient by calling the hospital&apos;s main line and asking to be transferred to their room. For privacy reasons, patient information cannot be provided without prior authorization.",
                 },
                 {
                   question:
-                    "What are the hospital's visitor policies during flu season?",
+                    "What are the hospital&apos;s visitor policies during flu season?",
                   answer:
                     "During flu season, visitor policies may be restricted to protect patients. Please check our website or call the hospital for the latest visitor guidelines.",
                 },
@@ -252,7 +253,7 @@ export function LandinngPageOne() {
               ))}
             </div>
             <p className="mt-10 text-center text-lg text-gray-600">
-              Can't find what you're looking for?{" "}
+              Can&apos;t find what you&apos;re looking for?{" "}
               <a
                 href="#"
                 className="font-semibold text-blue-600 hover:text-blue-800 hover:underline"
@@ -531,10 +532,11 @@ export function LandinngPageOne() {
       {/* Features Section */}
       <div className="relative bg-gradient-to-r from-blue-500 to-purple-600 py-16">
         <div className="absolute inset-0">
-          <img
+          <Image
             className="h-full w-full object-cover opacity-20"
             src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
             alt="Medical background"
+            layout="fill"
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -985,3 +987,5 @@ export function LandinngPageOne() {
     </div>
   );
 }
+
+export default LandinngPageOne;
